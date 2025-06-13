@@ -1,0 +1,46 @@
+class humano:
+    def __init__(self, nombre, peso, estatura, edad, idioma, salud):
+        self.nombre = nombre
+        self.peso = peso
+        self.estatura = estatura
+        self.edad = edad
+        self.idioma = idioma
+        self.salud = salud
+    
+    def hablar(self):
+        print(f"{self.nombre} dice: ¡hola! en: {self.idioma}")
+        
+    def vivir(self):
+        print(f"{self.salud} estas vivo")
+        self.salud = self.salud - 20.1
+        
+    def morir(self):
+        if self.salud == 0:
+              print(f"{self.salud} estas muerto")
+        if self.salud == 1:
+            print(f"vas a morir!!:{self.salud}")
+        else:
+            print(f"sigues vivo:{self.salud}")
+    def comer(self):
+        print(f" tu peso aumento:{self.peso}Kg")
+        self.peso = self.peso + 2
+    def dormir(self):
+        print(f"zzZZ; tu salud aumento:{self.salud}")
+        self.salud = self.salud + 20
+        
+    def caminar(self):
+        print(f"Por caminar has bajado a:{self.peso}Kg, salud aumentada:{self.salud}")
+        self.peso = self.peso - 0.5
+        self.salud = self.salud + 5
+    def descripcion(self):
+        print(f"humano1\n nombre:{self.nombre}\n peso:{self.peso}Kg\n eststura:{self.estatura}m\n edad:{self.edad}age\n idioma:{self.idioma}\n salud:{self.salud}")
+    
+    
+        
+        
+humano1 = humano("Brayan", 100.90, 1.92, 15, "español", 500)
+        
+while True:
+    print("""=============menu===============
+             1.hablar
+             2.
